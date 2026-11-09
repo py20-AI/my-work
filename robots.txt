@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://py20-ai.github.io/New-ward/sitemap.xml

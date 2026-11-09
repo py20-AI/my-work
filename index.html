@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-CN" class="static-mode">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="portfolio-mode" content="static">
+  <title>作品集 · PORTFOLIO</title>
+  <meta name="description" content="一个缓慢生长的作品档案">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="作品集 · PORTFOLIO">
+  <meta property="og:description" content="一个缓慢生长的作品档案">
+  <meta property="og:site_name" content="作品集">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://py20-ai.github.io/New-ward/">
+  <meta property="og:url" content="https://py20-ai.github.io/New-ward/">
+  <meta property="og:image" content="https://py20-ai.github.io/New-ward/media/w_a9f2feca97ef.webp">
+  <meta name="twitter:image" content="https://py20-ai.github.io/New-ward/media/w_a9f2feca97ef.webp">
+  <meta property="og:image:alt" content="秋天">
+  <meta name="theme-color" content="#f3ede3">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var forcedTheme = new URLSearchParams(location.search).get('theme');
+      var saved = localStorage.getItem('portfolio-theme');
+      if (forcedTheme === 'dark' || forcedTheme === 'light') {
+        document.documentElement.dataset.theme = forcedTheme;
+      } else if (saved === 'dark' || saved === 'light') {
+        document.documentElement.dataset.theme = saved;
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.dataset.theme = 'dark';
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#works">跳到作品</a>
+  <div class="grain" aria-hidden="true"></div>
+  <noscript><p class="noscript">这个作品集需要启用 JavaScript 才能浏览。</p></noscript>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="回到首页">
+      <span class="seal" aria-hidden="true">集</span>
+      <span class="brand-copy">
+        <strong id="brandTitle">作品集</strong>
+        <small id="brandLabel">PORTFOLIO</small>
+      </span>
+    </a>
+
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#works">作品<span class="nav-index">01</span></a>
+      <a href="#about">关于<span class="nav-index">02</span></a>
+      <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="切换深色模式">
+        <svg class="theme-icon sun" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="4.2"></circle>
+          <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"></path>
+        </svg>
+        <svg class="theme-icon moon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M20.2 14.4A8.4 8.4 0 0 1 9.6 3.8 8.6 8.6 0 1 0 20.2 14.4Z"></path>
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-eyebrow">
+        <span id="heroLabel">PORTFOLIO</span>
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        <span>持续更新</span>
+        <span class="eyebrow-line" aria-hidden="true"></span>
+        <span class="hero-year" id="heroYear">2026</span>
+      </div>
+
+      <h1 class="hero-title" id="heroTitle">作品集</h1>
+
+      <div class="hero-bottom">
+        <p class="hero-tagline" id="heroTagline">一个缓慢生长的作品档案</p>
+        <p class="hero-intro" id="heroIntro"></p>
+        <dl class="hero-meta">
+          <div>
+            <dt>作品</dt>
+            <dd><span id="workCount">—</span> 件</dd>
+          </div>
+          <div>
+            <dt>分类</dt>
+            <dd><span id="categoryCount">—</span> 类</dd>
+          </div>
+          <div>
+            <dt>最近更新</dt>
+            <dd id="lastUpdated">—</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-foot">
+        <a class="scroll-cue" href="#works">
+          <span>浏览作品</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v15M5.5 12.5 12 19l6.5-6.5"></path></svg>
+        </a>
+        <p class="hero-note" id="heroNote">SELECTED WORKS · 慢慢更新</p>
+      </div>
+    </section>
+
+    <section class="works" id="works" aria-labelledby="worksTitle">
+      <div class="section-head">
+        <h2 id="worksTitle"><span class="section-num">01</span>作品</h2>
+        <p class="section-count" id="worksCountText">正在加载…</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" id="filters" role="group" aria-label="按分类筛选"></div>
+        <label class="search">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.3"></circle>
+            <path d="m15.6 15.6 4.4 4.4"></path>
+          </svg>
+          <input id="search" type="search" placeholder="搜索标题、标签…" autocomplete="off" aria-label="搜索作品">
+        </label>
+      </div>
+
+      <div class="gallery" id="gallery" aria-live="polite"></div>
+
+      <div class="empty" id="emptyState" hidden>
+        <span class="empty-mark" aria-hidden="true">空</span>
+        <h3 id="emptyTitle">这里还是一张白纸</h3>
+        <p id="emptyText">上传第一件作品，让这个页面开始生长。</p>
+        <div class="empty-actions">
+          <a class="btn btn-primary" id="emptyAction" href="#" hidden>上传作品</a>
+          <button class="btn btn-ghost" id="resetFilters" type="button" hidden>清除筛选</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="aboutTitle">
+      <div class="section-head">
+        <h2 id="aboutTitle"><span class="section-num">02</span>关于</h2>
+        <p class="section-count">ABOUT THE AUTHOR</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-lead">
+          <p class="about-kicker" id="aboutKicker">一点自我介绍</p>
+          <p class="about-bio" id="aboutBio"></p>
+          <div class="about-sign" id="aboutSign" hidden>
+            <span class="sign-line" aria-hidden="true"></span>
+            <span id="aboutOwnerSign"></span>
+          </div>
+        </div>
+
+        <aside class="about-side">
+          <dl class="facts">
+            <div>
+              <dt>作者</dt>
+              <dd id="aboutOwner">—</dd>
+            </div>
+            <div id="locationRow" hidden>
+              <dt>所在</dt>
+              <dd id="aboutLocation"></dd>
+            </div>
+            <div id="emailRow" hidden>
+              <dt>联系</dt>
+              <dd><a id="aboutEmail" href="#"></a></dd>
+            </div>
+          </dl>
+
+          <div class="socials" id="aboutSocials"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p id="footerNote">本站作品版权归作者所有，未经许可请勿转载。</p>
+      <div class="footer-right">
+        <span class="footer-mark" aria-hidden="true">集</span>
+        <button class="text-btn" id="toTop" type="button">回到顶部 ↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lb-backdrop" data-close="1"></div>
+    <div class="lb-shell" role="dialog" aria-modal="true" aria-labelledby="lbTitle" aria-describedby="lbDesc">
+      <div class="lb-bar">
+        <span class="lb-counter" id="lbCounter">01 / 01</span>
+        <span class="lb-label">作品详情</span>
+        <button class="lb-close" id="lbClose" type="button" aria-label="关闭">
+          <span>关闭</span>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+        </button>
+      </div>
+
+      <button class="lb-arrow lb-prev" id="lbPrev" type="button" aria-label="上一件作品">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 4 7 12l8 8"></path></svg>
+      </button>
+      <button class="lb-arrow lb-next" id="lbNext" type="button" aria-label="下一件作品">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 4 8 8-8 8"></path></svg>
+      </button>
+
+      <div class="lb-body">
+        <div class="lb-stage" id="lbStage">
+          <div class="lb-loader" id="lbLoader" aria-hidden="true"></div>
+          <img id="lbImage" alt="">
+        </div>
+
+        <aside class="lb-info">
+          <div class="lb-info-inner">
+            <p class="lb-category" id="lbCategory"></p>
+            <h2 class="lb-title" id="lbTitle"></h2>
+            <p class="lb-desc" id="lbDesc"></p>
+            <ul class="lb-tags" id="lbTags"></ul>
+            <div class="lb-meta">
+              <span id="lbDate"></span>
+              <span id="lbSize"></span>
+            </div>
+            <a class="lb-full" id="lbFull" href="#" target="_blank" rel="noreferrer">
+              查看大图 <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

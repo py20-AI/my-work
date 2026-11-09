@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>页面走丢了 · 作品集</title>
+  <meta name="theme-color" content="#f3ede3">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    try {
+      var saved = localStorage.getItem('portfolio-theme');
+      if (saved === 'dark' || saved === 'light') document.documentElement.dataset.theme = saved;
+      else if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.theme = 'dark';
+    } catch (e) {}
+  </script>
+</head>
+<body class="notfound-page">
+  <div class="grain" aria-hidden="true"></div>
+  <main class="notfound">
+    <span class="notfound-seal" aria-hidden="true">集</span>
+    <p class="notfound-code">ERROR 404 · 页面未找到</p>
+    <h1>这一页<br>还没有作品</h1>
+    <p class="notfound-text">可能是链接写错了，也可能这里本来就没有东西。<br>回到画廊，看看已经放上来的作品。</p>
+    <a class="btn btn-primary" href="./">回到作品集 <span aria-hidden="true">→</span></a>
+    <p class="notfound-meta">SILENT PAGE · 空也是一种留白</p>
+  </main>
+</body>
+</html>
