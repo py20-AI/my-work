@@ -1,0 +1,26 @@
+{
+  "works": [
+    {
+      "id": "w_a9f2feca97ef",
+      "title": "秋天",
+      "description": "",
+      "category": "设计",
+      "tags": [],
+      "date": "2026-11-08",
+      "created": "2026-11-08T23:23:34+08:00",
+      "width": 1920,
+      "height": 2560,
+      "color": "#1c2019",
+      "demo": false,
+      "image": "media/w_a9f2feca97ef.webp",
+      "thumbUrl": "thumbs/w_a9f2feca97ef.webp"
+    }
+  ],
+  "categories": [
+    {
+      "name": "设计",
+      "count": 1
+    }
+  ],
+  "total": 1
+}
