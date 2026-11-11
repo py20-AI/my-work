@@ -1,6 +1,21 @@
 {
   "works": [
     {
+      "id": "w_fc5152441676",
+      "title": "黄昏",
+      "description": "",
+      "category": "试验",
+      "tags": [],
+      "date": "2026-11-12",
+      "created": "2026-11-12T01:06:01+08:00",
+      "width": 1920,
+      "height": 2560,
+      "color": "#1f1f1f",
+      "demo": false,
+      "image": "media/w_fc5152441676.webp",
+      "thumbUrl": "thumbs/w_fc5152441676.webp"
+    },
+    {
       "id": "w_a9f2feca97ef",
       "title": "秋天",
       "description": "",
@@ -20,7 +35,11 @@
     {
       "name": "设计",
       "count": 1
+    },
+    {
+      "name": "试验",
+      "count": 1
     }
   ],
-  "total": 1
+  "total": 2
 }
